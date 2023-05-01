@@ -1,0 +1,68 @@
+.grid{
+    background-color:black;
+    width:100%;
+    height:500px;
+}
+.container{
+    width: 90%;
+    height: 400px;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    /* grid-template-rows: repeat(8,25%); */
+    /* justify-items: center; */
+    /* align-items: center; */
+    gap:10px 12px;
+    /* place-items: center start; */
+    /* column-gap:5px; */
+    /* row-gap:5px; */
+
+}
+.container .item{
+    background-color: aqua;
+    margin:5px;
+}
+
+
+
+/* display: grid; used to specify grid to the elements.
+grid-template-columns: 25% 25% 25% 25%; number of columns we need and its width specified to display content.
+a short-hand way => grid-template-columns:repeat(number of columns,width of columns)
+can also use 'auto' to let the system configure the number of rows or number of columns or width of the content.
+eg: grid-template-columns: auto auto
+grid-template-columns:repeat(5,auto) */
+
+/* We can also create columns using fractions
+eg: grid-template-columns: 1fr 1fr
+ grid-template-columns: 1fr 1fr 2fr i.e 25% 25% 50% <=> grid-template-columns:repeat(2,1fr) */
+
+ /*grid-template-rows: repeat(number of rows,height of rows) it is used to apply row height depending upon the number of rows.
+eg: grid-template-rows:repeat(8,25%);*/
+
+/*column-gap,row-gap:specifying gap between rows and columns.
+shorthand => gap: row-gap column-gap*/
+
+/*Properties of Grid
+1.grid-tempalte-row
+2.grid-template-column
+3.justify-items=> used to align items wrt to x axis
+
+justify-item: start,end,center,stretch
+
+by default the value of justify-item:stretch*/
+
+/*place-items: align-items justify-items*/
+
+/*justify-content:start,end,center,stretch,space-around,space-between,space-evenly*/
+
+/* align-content wrt to y-axis and justify-content wrt to x-axis */
+
+
+
+
+
+
+
+
+
+
